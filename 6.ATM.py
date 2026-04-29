@@ -6,7 +6,7 @@ min_balance=1000
 if withdraw>balance:
     print("Insufficient balance!")
 elif balance-withdraw<min_balance:
-    print("Transaction failed! Minimum balance voilation.")  
+    print("Transaction failed! Minimum balance violation.")  
 else:
     balance=balance-withdraw
     print("transaction successful!")

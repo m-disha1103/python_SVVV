@@ -9,7 +9,7 @@ n = 4
 for i in range(n):
     
     for k in range(i):
-            print("  ", end="")
+            print("  ", end=" ")
     for j in range(5):
             print("*", end="")
     

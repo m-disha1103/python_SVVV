@@ -1,0 +1,3 @@
+1. WAP to create hollow rectangle and diamond
+2. 5 string questions from hackerrank 
+3.function v/s method
