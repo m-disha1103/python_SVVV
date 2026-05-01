@@ -1,3 +1,5 @@
+#29 april 2026
 1. WAP to create hollow rectangle and diamond
 2. 5 string questions from hackerrank 
-3.function v/s method
+3. function v/s method
+4. study about flow chart, pseudocode , algorithm
