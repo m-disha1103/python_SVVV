@@ -34,11 +34,8 @@ tpl=(1,2,3)
 t = (1, 2, 3)
 print(t.index(2))  # Output: 1
 
-Built-in functions that work with tuples:
-len() → Returns number of elements
-max() → Returns largest value
-min() → Returns smallest value
-sum() → Returns sum of elements (numeric only)
-
-
-write a program to fing second largest and third smallest number in a list of elements
+# Built-in functions that work with tuples:
+# len() → Returns number of elements
+# max() → Returns largest value
+# min() → Returns smallest value
+# sum() → Returns sum of elements (numeric only)
