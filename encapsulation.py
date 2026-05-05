@@ -29,12 +29,15 @@ class Bank:
         return self.__balance
     def setterbalance(self,balance):
         self.__balance=balance
-
+ 
 b=Bank(12345,"disha",10000)
-print(b.getaccno()) #output: 12345
-b.setteraccno(599800)
-print(b.getaccno()) #output: 599800
-print(b.getname()) #output: disha
-b.settername("Disha Malviya")
-print(b.getname()) #output: Disha Malviya
-print(b.getbalance()) #output: 10000
+# print(b.getaccno()) #output: 12345
+# b.setteraccno(599800)
+# print(b.getaccno()) #output: 599800
+# print(b.getname()) #output: disha
+# b.settername("Disha Malviya")
+# print(b.getname()) #output: Disha Malviya
+# print(b.getbalance()) #output: 10000
+
+# print(b.__accno)
+print(b._Bank__accno) #output: 12345
