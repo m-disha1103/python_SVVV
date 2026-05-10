@@ -4,3 +4,5 @@
 3. function v/s method
 4. study about flow chart, pseudocode , algorithm
 # find the longest sub array/sub string with atmost k distinct character example str"eceba",k=2,
+
+# practise sheet given on 6/5/2026
