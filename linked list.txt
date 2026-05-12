@@ -9,3 +9,12 @@ Non-contiguous (Nodes) |Contiguous (Sequential)
 dynamic                |Static/Fixed       
 Fast-O(1)              |Slow -O(n)
 sequential-O(n)        |Random Access - O(1)
+
+Key Components and TypesNode: 
+Contains data and a pointer to the next node.
+Head & Tail: The "head" is the first node
+The "tail" is the last, pointing to null.
+Types: 
+ >> Singly Linked List (next only)
+ >> Doubly Linked List (next and previous pointers)
+ >> Circular Linked List (last node points back to the first).
