@@ -16,3 +16,11 @@ class solution:
     def createnode(self,d):
         newnode=Node(d)
         return newnode
+    def addathead(self,head,d):
+        newnode=self.createnode(d)
+        if head==None:
+            head== newnode
+            return head
+        newnode.next=head
+        head=newnode
+        return head
