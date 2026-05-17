@@ -126,6 +126,21 @@ class Solution:
         temp.next = temp.next.next
         return head
     
+    def findmiddlenode(self, head):
+        if head is None:
+            print("List is empty")
+            return None
+        slow = head
+        fast = head
+        while fast is not None and fast.next is not None:
+            slow = slow.next
+            fast = fast.next.next
+        if fast.next==None:
+            print(slow.data)
+        else:
+            print(slow.data)
+        return slow.data
+    
 if __name__ == "__main__":
 
     head = None
@@ -135,4 +150,27 @@ if __name__ == "__main__":
     head = s.addattail(head, 15)
     head = s.addattail(head, 20)
     head = s.addatindex(head, 12, 2)
+    #output:
+    # 5 -> 10 -> 12 -> 15 -> 20 -> None
+    head = s.deleteathead(head)
+    head = s.deletetail(head)
+    head = s.deletewithdata(head, 12)
+    head = s.deleteatindex(head, 0)
+    #output:
+    # 15 -> None
     s.printlist(head)
+
+    #reverse a linked list
+    def reverselist(self, head):
+        if head is None:
+            print("List is empty")
+            return None
+        prev = None
+        curr = head
+        while curr is not None:
+            nextnode = curr.next
+            curr.next = prev
+            prev = curr
+            curr = nextnode
+        head = prev
+        return head
