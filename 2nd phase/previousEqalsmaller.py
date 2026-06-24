@@ -1,21 +1,25 @@
 #24 june 2026
+#stock span problem
 #stack previous equal or smaller element
 #[100,80,60,70,60,75,85] input
 #[1,1,1,2,2,4,6] output
 lst=[100,80,60,70,60,75,85]
-ans=[]
+res=[]
 st=[]
-count=0
 for i in range(0,len(lst)):
     curr = lst[i]
+    temp=[]
+    count=1
     while len(st)!=0:
-        if curr>=st[0]:
-            ans.append(st[-1])
-            st.append(curr)
+        if curr>=st[-1]:
+            count+=1
+            temp.append(st.pop())
+        else:
             break
-        st.pop()
-    if len(st)==0:
-        ans.append(-1)    
-        st.append(curr)
+    res.append(count)
+    st.append(curr)
+    temp.reverse()
+    st.extend(temp)       
 
-print(ans)
+
+print(res)   
