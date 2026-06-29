@@ -63,15 +63,44 @@ class Queue:
             print(temp.data,end=" ")
             temp=temp.next    
 
-if __name__=="__main__":
-    q=Queue()
-    q.enqueue(10)
-    q.enqueue(20)
-    q.enqueue(30)
-    q.enqueue(40)
-    q.enqueue(50)
-    q.enqueue(60)
-    q.display()
+# Stack using 2 queue 
+class stack :
+
+    def push(self, que, ele):
+        que.enqueue(ele)
+
+    def pop(self,que):
+        temp=que.front
+        while temp.next.next!=None:
+            temp=temp.next
+            value=temp.next.data
+        temp.next=None
+        que.rear=temp            
+
+        return val
+    
+    def display(self, que):
+        if que.front == None:
+            return
+        temp = que.front
+        s=''
+        while temp != None:
+            s=str(temp.data)+" "
+            temp = temp.next
+        print(s)
+
+
+
+if __name__ == "__main__":
+    q = Stack()
+    q.push(10)
+    q.push(20)
+    q.push(30)
+    q.push(40)
+    q.push(50)
+    q.push(60)
+
+    st.display()
     print()
     q.dequeue()
     q.display()
