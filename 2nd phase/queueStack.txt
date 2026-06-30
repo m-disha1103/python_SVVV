@@ -1,0 +1,63 @@
+# 24 june 2026
+QUEUE
+A Queue Data Structure is a fundamental concept in computer science used for storing and managing data in a specific order.
+
+>> It follows the principle of "First in, First out" (FIFO), where the first element added to the queue is the first one to be removed.
+>> It is used as a buffer in computer systems where we have speed mismatch between two devices that communicate with each other.
+>> abstract data type (ADT)
+>> A queue is a line of people, vehicles, or items waiting for their turn to be served. 
+>> In broader contexts, it refers to a sequence of tasks or data held in temporary storage waiting to be processed
+
+Types of queue
+1) simple queue
+2) deque (double ended queue)
+3) priority queue
+4) circular queue
+
+operation
+1)enqueue
+2)dequeue
+3)peek
+4)size
+5)implement using STACK
+6)contains
+7)merge
+
+*/ stack/*
+>> A stack is a concept involving items arranged one on top of another, or a tidy pile
+>> A Stack is a linear data structure that follows a particular order in which the operations are performed. 
+>> The order may be LIFO(Last In First Out) or FILO(First In Last Out). 
+>> LIFO implies that the element that is inserted last, comes out first and FILO implies that the element that is inserted first, comes out last.
+> monotonic stack
+
+operations
+| Operation      | Description                                                  | Time Complexity |
+| -------------- | ------------------------------------------------------------ | --------------- |
+| **Push**       | Adds an element to the top of the stack.                     | **O(1)**        |
+| **Pop**        | Removes the top element from the stack.                      | **O(1)**        |
+| **Peek (Top)** | Returns the top element without removing it.                 | **O(1)**        |
+| **isEmpty**    | Checks whether the stack is empty.                           | **O(1)**        |
+| **isFull**     | Checks whether the stack is full (for array implementation). | **O(1)**        |
+| **Size**       | Returns the number of elements in the stack.                 | **O(1)**        |
+
+Types
+1) Fixed-Size Stack (Static Stack)
+   > Implemented using an array.
+   > Size is fixed at the time of creation.
+   > Cannot grow beyond its capacity.
+   > May cause Stack Overflow if full.
+2)  Dynamic Stack
+   > Implemented using a linked list or Python's list.
+   > Size grows and shrinks dynamically.
+   > No predefined limit (except available memory).   
+
+
+Stack Implementation Types
+1) Array Implementation
+   > Static size.
+   > Easy to implement.
+   > Operations: push, pop, peek → O(1)
+2) Linked List Implementation
+   > Dynamic size.
+   > No overflow until memory is exhausted.
+   > Operations: push, pop, peek → O(1)   
