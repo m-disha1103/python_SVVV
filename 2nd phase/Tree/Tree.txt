@@ -1,0 +1,77 @@
+# 30 june 2026
+# trees
+>> A tree is a hierarchical data structure used to organize and represent data in a parent–child relationship.
+>> It consists of nodes, where the topmost node is called the root, and every other node can have one or more child nodes
+>> Tree data structures are non-linear structures used to store hierarchical data, optimize search operations, and manage workflow routing.
+
+Common Applications of Trees
+1) File Systems: Directory and folder structures in Windows, Mac, and Linux.
+2) HTML DOM: Web browsers use tree models to render and manipulate page elements.
+3) Routing Tables: Routers use Trie trees to store IP routing information.
+4) Databases: B-Trees and B+ Trees index large data sets for quick retrieval.
+5) Machine Learning: Decision trees analyze data features to make predictions.
+6) Autocomplete: Trie trees store dictionaries to predict words during typing.
+7) Game AI: Decision trees calculate optimal moves in games like chess.
+
+        A
+      / | \
+     B  C  D
+    / \    |
+   E   F   G
+   > A → Root node
+   > B, C, D → Children of A
+   > E, F → Children of B
+   > G → Child of D
+
+Terminology
+>> Root: The topmost node of the tree.
+>> Parent: A node having one or more children.
+>> Child: A node connected below a parent.
+>> Leaf Node: A node with no children.
+>> Sibling: Nodes having the same parent.
+>> Edge: Connection between two nodes.
+>> Path: Sequence of nodes connected by edges.
+>> Degree of a Node: Number of children of the node.
+>> Depth: Number of edges from the root to the node.
+>> Diameter: Number of edges on the longest path from the node to a leaf.
+>> Height of Tree: Height of the root.
+
+Types of Trees
+1) General Tree
+A node can have any number of children.
+      A
+    / | \
+   B  C  D
+2) Binary Tree
+Each node has at most 2 children (left and right).
+      A
+     / \
+    B   C
+   / \
+  D   E
+3) Binary Search Tree (BST)
+Left subtree contains smaller values.
+Right subtree contains larger values.
+        50
+       /  \
+     30    70
+    / \   / \
+   20 40 60 80
+4) Full Binary Tree
+Every node has either 0 or 2 children.
+5) Complete Binary Tree
+All levels are completely filled except possibly the last, which is filled from left to right.
+6) Perfect Binary Tree
+All internal nodes have two children and all leaf nodes are at the same level.
+7) Balanced Binary Tree
+Height difference between left and right subtrees is small (typically at most 1).
+
+Tree Traversals
+(1) Preorder (Root → Left → Right) ... DFS 
+A B D E C
+(2) Inorder (Left → Root → Right) ... DFS
+D B E A C
+(3) Postorder (Left → Right → Root) ... DFS
+D E B C A
+(4) Level Order (Breadth-First) ... BFS
+A B C D E
