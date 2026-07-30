@@ -35,17 +35,62 @@ class Graph:
             for neighbour in self.graph[curr]:
                 if visited[neighbour]!=True:
                     que.append(neighbour)
-                    visited[neighbour]=True   
+                    visited[neighbour]=True  
+
+    def hascycle(self,src,visited,parent):
+        visited[src]=True
+
+        for neighbour in self.graph[src]:
+            if visited[neighbour]!=True:
+                if self.hascycle(neighbour,visited,src):
+                    return True
+                elif neighbour!= parent:
+                    return True
+                
+            return False    
+        
+    # number of island 
+    def countcomponent(self):
+        visited = [False] * len(self.graph)
+        count=0
+
+        for i in range(1, len(self.graph)):
+            if visited[i]!= True:
+                self.dfs(i, visited)
+                count += 1
+
+        return count
+    
+    def countNetworks(self):
+        visited = [False] * len(self.graph)
+        count = 0
+
+        for i in range(1, len(self.graph)):
+            if not visited[i]:
+                self.dfs(i, visited)   
+                count += 1
+                print()
+
+        return count
+
 g1=Graph()
-g1.creategraph(6)
+# g1.creategraph(6)
+# g1.addedge(1,2)
+# g1.addedge(2,3)
+# g1.addedge(2,5)
+# g1.addedge(3,4)
+# g1.addedge(4,5)
+# g1.addedge(4,1)
+# g1.addedge(5,6)
+
+g1.creategraph(7)
 g1.addedge(1,2)
-g1.addedge(2,3)
-g1.addedge(2,5)
 g1.addedge(3,4)
 g1.addedge(4,5)
-g1.addedge(4,1)
+g1.addedge(3,5)
 g1.addedge(5,6)
 
 # g1.dfs(1,[False,False,False,False,False,False,False])
-g1.bfs(1)
-
+# g1.bfs(1)
+print("No. of Islands =", g1.countcomponent())
+#   our company network has 
